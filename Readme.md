@@ -10,7 +10,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -22,9 +22,9 @@
   <h3 align="center">Customer Churn Modeling</h3>
 
   <p align="center">
-    This is Final Capstone Project for ALY6140 80956 Analytics Systems Technology SEC 04 Spring 2021 CPS primarily made to learn Data Analytics, Machine Learning and AI using python. 
+    This is Final Capstone Project for ALY6140 80956 Analytics Systems Technology SEC 04 Spring 2021 CPS. <br>Primarily made to learn Data Analytics, Machine Learning and AI using python.
     <br />
-    <a href="https://github.com/mascarenhasneil/ChurnModeling/blob/master/Readme.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mascarenhasneil/ChurnModeling/blob/main/Readme.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/mascarenhasneil/ChurnModeling">View Demo</a>
@@ -66,7 +66,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See **[LICENSE](https://github.com/mascarenhasneil/ChurnModeling/blob/master/LICENSE)** for more information.
+Distributed under the MIT License. See **[LICENSE](https://github.com/mascarenhasneil/ChurnModeling/blob/main/LICENSE)** for more information.
 
 
 
@@ -94,6 +94,6 @@ https://github.com/mascarenhasneil/ChurnModeling
 [issues-shield]: https://img.shields.io/github/issues/mascarenhasneil/ChurnModeling.svg?style=flat-square
 [issues-url]: https://github.com/mascarenhasneil/ChurnModeling/issues
 [license-shield]: https://img.shields.io/github/license/mascarenhasneil/ChurnModeling.svg?style=flat-square
-[license-url]: https://github.com/mascarenhasneil/ChurnModeling/blob/master/LICENSE
+[license-url]: https://github.com/mascarenhasneil/ChurnModeling/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/mascarenhasneil
