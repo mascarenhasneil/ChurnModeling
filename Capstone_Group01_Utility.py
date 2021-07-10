@@ -53,8 +53,24 @@ def CreditScore_FE(bcd):
     bcd.loc[(bcd['CreditScore'] > 850), 'CreditScore'] = 5
     return bcd
 
+
+
+def GetModels():
+    models = []
+    models.append(['XGBClassifier',XGBClassifier(learning_rate=0.1,
+                                             objective='binary:logistic',
+                                             random_state=0,eval_metric='mlogloss')])
+    models.append(['Logistic Regression',LogisticRegression(random_state=0)])
+    models.append(['SVM',SVC(random_state=0)])
+    models.append(['KNeigbors',KNeighborsClassifier()])
+    models.append(['DecisionTree',DecisionTreeClassifier(random_state=0)])
+    models.append(['RandomForest',RandomForestClassifier(random_state=0)])
+    models.append(['AdaBoostClassifier',AdaBoostClassifier()])
+    return models
+
+
 def Get_Grid_Models():
-    grid_models = [(XGBClassifier(), [{'learning_rate': [0.01, 0.05, 0.1], 'eval_metric': ['logloss']}]),
+    grid_models = [(XGBClassifier(), [{'learning_rate': [0.01, 0.05, 0.1], 'eval_metric': ['logloss','error']}]),
                (KNeighborsClassifier(),[{'n_neighbors':[5,7,8,10], 'metric': ['euclidean', 'manhattan', 'chebyshev', 'minkowski']}]), 
                (DecisionTreeClassifier(),[{'criterion':['gini','entropy'],'random_state':[0]}]), 
                (RandomForestClassifier(),[{'n_estimators':[100,150,200],'criterion':['gini','entropy'],'random_state':[0]}]),]
