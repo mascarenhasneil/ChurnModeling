@@ -11,6 +11,15 @@ Date: 10 May 2021
 """
 
 
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
+from sklearn.ensemble import AdaBoostClassifier
+
+
 
 def Test():   # Not required but a good practice to check if this file is accessible 
     print("Capstone Test Successful")
@@ -43,3 +52,23 @@ def CreditScore_FE(bcd):
     bcd.loc[(bcd['CreditScore'] > 750) & (bcd['CreditScore'] <= 850), 'CreditScore'] = 4
     bcd.loc[(bcd['CreditScore'] > 850), 'CreditScore'] = 5
     return bcd
+
+def Get_Grid_Models():
+    grid_models = [(XGBClassifier(), [{'learning_rate': [0.01, 0.05, 0.1], 'eval_metric': ['logloss']}]),
+               (KNeighborsClassifier(),[{'n_neighbors':[5,7,8,10], 'metric': ['euclidean', 'manhattan', 'chebyshev', 'minkowski']}]), 
+               (DecisionTreeClassifier(),[{'criterion':['gini','entropy'],'random_state':[0]}]), 
+               (RandomForestClassifier(),[{'n_estimators':[100,150,200],'criterion':['gini','entropy'],'random_state':[0]}]),]
+    return grid_models
+
+def Get_classifier():
+    classifier = XGBClassifier(base_score=None, booster=None, colsample_bylevel=None,colsample_bynode=None, colsample_bytree=None, gamma=None,
+              gpu_id=None, importance_type='gain', interaction_constraints=None,
+              learning_rate=None, max_delta_step=None, max_depth=None,
+              min_child_weight=None,monotone_constraints=None,
+              n_estimators=100, n_jobs=None, num_parallel_tree=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=None, tree_method=None,
+              validate_parameters=None, verbosity=None)
+    return classifier
+
+
