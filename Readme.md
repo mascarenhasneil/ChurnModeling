@@ -6,6 +6,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -14,7 +15,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
+## Project
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -66,7 +67,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See **[LICENSE](https://github.com/mascarenhasneil/ChurnModeling/blob/main/LICENSE)** for more information.
+Distributed under the GPL v3 License. See **[LICENSE](https://github.com/mascarenhasneil/ChurnModeling/blob/main/LICENSE)** for more information.
 
 
 
@@ -74,6 +75,7 @@ Distributed under the MIT License. See **[LICENSE](https://github.com/mascarenha
 ## Contact
 
 Neil Mascarenhas - [About me?](https://about.me/neilmascarenhas)
+Krishna Naga Mohan Gollapalli - [About Him?](https://github.com/krishna-gollapalli)
 
 Project Link: [https://github.com/mascarenhasneil/ChurnModeling](https://github.com/mascarenhasneil/ChurnModeling)
 
